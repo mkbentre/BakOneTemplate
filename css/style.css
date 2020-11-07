@@ -1,0 +1,441 @@
+/*Reset css*/
+*, body, h1, h2, h3, p {
+	margin:0;
+	padding:0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	max-width: 1020px;
+	margin: auto;
+}
+
+/*Declare fonts*/
+@font-face {
+	font-family: Lato-Regular;
+	src: url(fonts/lato/Lato-Regular.ttf);
+}
+@font-face {
+	font-family: Lato-Italic;
+	src: url(fonts/lato/Lato-Italic.ttf);
+}
+@font-face {
+	font-family: Lato-Light;
+	src: url(fonts/lato/Lato-Light.ttf);
+}
+@font-face {
+	font-family: Lato-Bold;
+	src: url(fonts/lato/Lato-Bold.ttf);
+}
+header .navbar-default .navbar-nav>li>a {
+	font-family: Lato-Regular;
+	font-size:14px;
+	color: #444;
+	line-height: 37px;
+	padding-top:0;
+	padding-bottom: 0;
+
+}
+
+/*header .navbar-default .navbar-nav>li>a {
+	line-height: 15px;
+	background-color:yellow;
+	padding-top:11px;
+	padding-bottom: 11px;
+}*/
+
+header .navbar-default .navbar-nav>li {
+	padding-top: 29px;
+	padding-bottom: 29px;
+}
+
+header .navbar-default .navbar-nav>li>a:hover {
+	background-color: #1bbc9b;
+	color: #fff;
+}
+
+header .navbar-default {
+	background:none;
+	border:none;
+	margin-bottom: 0;
+}
+
+header .navbar-brand {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 768px){
+	header .navbar-brand>img {
+		width:150px;
+	}
+	header .navbar-brand {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	header .navbar-default .navbar-nav>li {
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	header .navbar-collapse {
+		position: absolute;
+		background-color: #31C5E5;
+		width: 100%;
+		opacity: 0.9;
+	}
+}
+
+
+/*Home*/
+main .home {
+	padding-top: 72px;
+	padding-bottom: 82px;
+	background-image: url(../images/baner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+
+main .home h1 {
+	line-height: 57px;
+	font-family: Lato-Light;
+	font-size: 55px;
+	margin-bottom: 29px;
+}
+main .home h1 strong {
+	font-family: Lato-Bold;
+}
+
+main .home p {
+	max-width: 576px;
+	line-height: 21px;
+	font-family: Lato-Light;
+	font-size: 18px;
+	margin: auto;
+	margin-bottom: 47px;
+}
+
+main .home button,
+main .portfolio button,
+main .contact button {
+	background-color: #1bbc9b;
+	line-height: 37px;
+	font-family: Lato-Bold;
+	font-size: 13px;
+	margin-bottom: 42px;
+	padding-left: 13px;
+	padding-right: 13px;
+	border: none;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+/*Portfolio*/
+main .portfolio {
+	padding-top: 51px;
+	padding-bottom: calc(61px - 34px);
+	max-width: 992px;
+}
+
+main .portfolio h2 {
+	line-height: 29px;
+	font-family: Lato-Regular;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+main .portfolio p {
+	line-height: 16px;
+	font-family: Lato-Regular;
+	font-size: 16px;
+	margin-bottom: 36px;
+}
+main .portfolio button {
+	margin-bottom: 45px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+main .portfolio img {
+	margin-bottom: 34px;
+}
+
+main .portfolio .card {
+	position: relative;
+	width: 180px;
+	height: 180px;
+	margin: auto;
+	display: block;
+}
+
+main .portfolio .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/background.png);
+	background-size: cover;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center; /*center theo chiểu ngang*/
+	align-items: center; /*center dọc*/
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
+
+main .portfolio .card:hover .overlay {
+	opacity: 1;
+}
+
+main .portfolio .overlay div span {
+	display:block;
+	color: #fff;
+}
+
+main .portfolio .overlay div span:nth-child(1) i {
+	font-size: 21px;
+}
+
+main .portfolio .overlay div span:nth-child(1) {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-image: url(../images/icon.png);
+	background-size: cover;
+	display: flex;
+	margin: auto;
+	margin-bottom: 18px;
+	justify-content: center;
+	align-items: center;
+}
+
+main .portfolio .overlay div span:nth-child(2) {
+	font-family: Lato-Regular;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+main .portfolio .overlay div span:nth-child(3) {
+	font-family: Lato-Regular;
+	font-size: 14px;
+}
+
+/*About*/
+main .about {
+	padding-top: 53px;
+	padding-bottom: 52px;
+	background-color: #16a086;
+}
+main .about .container-fluid {
+	max-width: 840px;
+}
+main .about h2 {
+	font-family: Lato-Regular;
+	font-size: 28px;
+	line-height: 29px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+main .about h2 ~ p {
+	font-family: Lato-Regular;
+	font-size: 14px;
+	line-height: 14px;
+	color: #fff;
+	margin-bottom: 46px;
+}
+main .about .content {
+	background-color: #fff;
+	width: 220px;
+	margin: auto;
+	padding-top: 18px;
+	padding-bottom: 19px;
+	margin-bottom: 20px;
+}
+main .about .content h3 {
+	font-family: Lato-Regular;
+	font-size: 18px;
+	line-height: 18px;
+	color: #444;
+	margin-bottom: 3px;
+}
+main .about .content i {
+	font-family: Lato-Italic;
+	font-size: 14px;
+	line-height: 15px;
+	color: #444;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+main .about .content p {
+	text-align: left;
+	line-height: 19px;
+	font-family: Lato-Regular;
+	color: #444;
+	font-size: 14px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+main .about .card {
+	position: relative;
+}
+
+main .about .overlay {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(../images/background_green.png);
+	width: 180px;
+	padding: 10px;
+	letter-spacing: 5px;
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
+
+main .about .card:hover .overlay {
+	opacity: 1;
+	top: 50%;
+}
+
+main .about .overlay i {
+	font-size: 29px;
+	color: #fff;
+}
+
+/*Contact*/
+main .contact {
+	padding-top: 49px;
+	padding-bottom: 60px; 
+	background-color: #ecf0f1;
+
+}
+main .contact h2 {
+	font-family: Lato-Regular;
+	font-size: 28px;
+	line-height: 29px;
+	color: #444;
+	margin-bottom: 54px;
+}
+main .contact h2 ~ p {
+	font-family: Lato-Regular;
+	font-size: 14px;
+	line-height: 14px;
+	color: #444;
+	margin-bottom: 51px;
+}
+main .contact input {
+	border: 2px solid #bec3c7;
+	height: 47px;
+	border-radius: 0px;
+	margin-bottom: 22px;
+}
+main .contact textarea {
+	border: 2px solid #bec3c7;
+	height: 153px;
+	border-radius: 0px;
+	margin-bottom: 23px;
+}
+
+main .contact ::placeholder {
+	font-family: Lato-Italic;
+	font-size: 14px;
+	line-height: 14px;
+	color: #999;
+}
+
+main .contact button {
+	margin-bottom: 0;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+main .contact h3 {
+	font-family: Lato-Regular;
+	font-size: 14px;
+	line-height: 14px;
+	color: #444;
+	margin-bottom: 21px;
+}
+
+main .contact address {
+	font-family: Lato-Regular;
+	font-size: 14px;
+	line-height: 14px;
+	color: #444;
+	margin-bottom: 24px;
+	display: flex;
+}
+main .contact address ~ p {
+	font-family: Lato-Regular;
+	font-size: 14px;
+	line-height: 14px;
+	color: #444;
+	margin-bottom: 18px;
+}
+
+main .contact address span:first-child {
+	padding-right: 5px;
+}
+	
+
+/*Footer*/
+footer {
+	line-height: 87px;
+	background-color: #2d3e50;
+}
+
+
+footer p {
+	font-family: Lato-Regular;
+	font-size: 14px;
+	color: #fff;
+}
+
+footer .back-to-top {
+	display: inline-block;
+	width: 44px;
+	line-height: 44px;
+	background-color: #1bbc9b;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	bottom: 20px;
+}
+
+footer .back-to-top i {
+	font-size: 20px;
+}
+
+footer .box {
+	float: right;
+	padding-right: 46px;
+}
+
+@media only screen and (max-width: 768px) {
+		footer .box {
+		float: right;
+		padding-right: 35px;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+		header nav .container-fluid,
+		main .contact,
+		footer .container-fluid {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.padding-right {
+		padding-right: 10px !important;
+	}
+
+	.padding-left {
+		padding-left: 10px !important;
+	}
+}
